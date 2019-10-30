@@ -14,6 +14,25 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/signup', function () {
+    return view('auth.signup');
+});
+
+Route::get('/signin', function () {
+    return view('auth.signin');
+});
+
+Route::get('/forgotpassword', function () {
+    return view('auth.forgotpassword');
+});
+
+Route::get('/postpage1', function () {
+    return view('postpage1');
+});
 
 Auth::routes();
 
